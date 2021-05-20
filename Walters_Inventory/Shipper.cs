@@ -8,6 +8,7 @@ namespace Walters_Inventory
 {
     class Shipper 
     {
+        //placeholder variables
         int _counter = 0;
         int _BicycleCounter = 0;
         int _LawnMowerCounter = 0;
@@ -20,8 +21,10 @@ namespace Walters_Inventory
             Products[1] = new Lawn_Mowers();
             Products[2] = new Baseball_Gloves();
             Products[3] = new Crackers();
+            //this resets the temporary counters, sets the temporary counters, and then returns them in main
             if (ProductType == Products[0].Product)
             {
+                
                 _counter =0;
                 _BicycleCounter =0;
                 counter++;
@@ -59,6 +62,7 @@ namespace Walters_Inventory
             }
             
         }
+        //these are all the counter methods
         public int CounterMethod()
         {
             return _counter;

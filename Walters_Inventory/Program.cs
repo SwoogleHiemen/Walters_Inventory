@@ -1,7 +1,7 @@
 ﻿using System;
 // Mason Walters
 //IT112
-//Notes:
+//Notes: :)
 //Behaviors not implemented and why:
 namespace Walters_Inventory
 {
@@ -27,6 +27,7 @@ namespace Walters_Inventory
 
             do
             {
+                //Menu
                 Console.Clear();
                 Console.WriteLine("Choose from the following options:(enter the number...)");
                 Console.WriteLine("1. Add a Bicycle to the Shipment");
@@ -37,6 +38,7 @@ namespace Walters_Inventory
                 Console.WriteLine("6. Compute Shipping Charges");
                 Pressed = Console.ReadKey();
                 Console.Clear();
+                //if statements taking keypresses
                 if (Pressed.Key == ConsoleKey.D1)
                  {
                     ProductType = Products[0].Product;
@@ -112,6 +114,7 @@ namespace Walters_Inventory
                 }
                 if (Pressed.Key == ConsoleKey.D6)
                 {
+                    //if the user presses 6, then the program will compute
                     Compute = true;
                     break;
 
